@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright 2018, The Android Open Source Project
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,8 +14,8 @@
   ~ limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools"
-          package="com.example.android.codelabs.navigation">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.android.codelabs.navigation">
 
     <application
         android:allowBackup="false"
@@ -25,7 +24,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MainActivity">
+        <activity android:name=".demo.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,8 +33,8 @@
             </intent-filter>
 
             <!-- TODO STEP 12.2 -->
-            <!--<nav-graph android:value="@navigation/mobile_navigation" />-->
-            <!-- TODO END STEP 12.2-->
+            <!-- <nav-graph android:value="@navigation/mobile_navigation" /> -->
+            <!-- TODO END STEP 12.2 -->
 
         </activity>
 
@@ -49,6 +48,11 @@
                 android:resource="@xml/deep_link_appwidget_info" />
         </receiver>
 
+        <activity android:name=".MainActivity" />
+
+        <!--<meta-data-->
+            <!--android:name="com.google.android.actions"-->
+            <!--android:resource="@xml/nav_graph_main" />-->
     </application>
 
 </manifest>

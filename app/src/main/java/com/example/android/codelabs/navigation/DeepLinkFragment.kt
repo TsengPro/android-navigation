@@ -33,6 +33,7 @@ import androidx.navigation.fragment.findNavController
 
 /**
  * Fragment used to show how to deep link to a destination
+ * 深度链接到目的地
  */
 class DeepLinkFragment : Fragment() {
     override fun onCreateView(
